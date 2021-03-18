@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Operadores relacionais</title>
+	<meta charset="utf-8">
+
+</head>
+<body>
+	<h1>Abra o console para ver resultados</h1>
+	<script type="text/javascript">
+		var n1 = 0;
+		
+		//Igaualdade:
+		console.log('Igualdade (==)');
+		console.log(n1 == 0);
+		//Mesmo sendo de tipos primitivos diferentes o valor é igual, portanto, retornara true:
+		console.log(n1 == '0');
+
+		//Diferente:
+		console.log('Diferente (!=)');
+		console.log(n1 != 0);
+
+		//Maior e Menor:
+		console.log('Maior e menor');
+		console.log(n1 > 0);
+		console.log(n1 < 1);
+
+		//Maior e igual - Menor e igaul:
+		console.log(n1 >= 0);
+		console.log(n1 <= 0);
+
+		//Valor igual e tipo primitivo igual;
+		console.log('Valor e tipo primitivo igual');
+		console.log(n1 === 0);
+		console.log(n1 === '0');
+
+		//Difereça entre valor e tipo primitivo:
+		console.log('Diferente em valor e tipo primitivo');
+		console.log(n1 !== 0);
+		console.log(n1 !== '0');
+
+		var div = 10
+		console.log(div /= 10);
+	</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Operações matemáticas Js</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		var valor_1 = 10;
+		var valor_2 = 10;
+
+		//Somar:
+		console.log(valor_1 + valor_2);
+
+		//Subtrair:
+		console.log(valor_1 - valor_2);
+
+		//Multiplicar:
+		console.log(valor_1 * valor_2);
+
+		//Dividir;
+		console.log(valor_1 / valor_2);
+
+		//Resto da divisão (10 / 10 = 1 e sobra 0 -> resto da divisão):
+		console.log(valor_1 % valor_2);
+
+		//Quando algum valor está entre (), primeiro será resolvido tudo o que estiver dentro para depois resolver o que estiver fora:
+		console.log((10 + 10) - 19);
+
+		//Não confunda:
+		var n1 = '10';
+		var n2 = '10';
+
+		//Concatenação, o valor resultante será 1010, pois o + quando esta sendo usando com string ele concatena ou seja junta as duas strings: 
+		console.log(n1 + n2);
+
+		//Incremento:
+		var atribuir = 0;
+		atribuir += 1;
+		console.log(atribuir);
+		//Decremento:
+		var diminuir = 5;
+		diminuir -= 1;
+		console.log(diminuir);
+		//Outra forma de fazer;
+		console.log('Atribuição: ' + atribuir++);
+		console.log('Atribuição: ' + ++atribuir);
+		console.log('Decrementando: ' + diminuir--);
+		console.log('Decrementando: ' + --diminuir);
+
+
+		//ímpar ou par:
+		var valor;
+		
+		valor = 2;
+		
+
+		if (valor % 2 == 1) {
+			console.log('O valor '+ valor + ' é impar...');
+		}else{
+			console.log('O valor '+ valor + ' é par...');
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Estruturas Condicionais</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Abra o console para visualizar resultados</h1>
+
+	<script type="text/javascript">
+
+		var idade = 14;
+		var valor = '14';
+
+		//Apesar de ser um interiro e uma string, a condicional abaixo retornará true:
+		console.log(idade == valor);
+		
+		//Verificando se valores são iguais e se ambos são do mesmo tipo primitivo:
+		console.log(idade === valor);
+		
+		//Criando condição para verificar se a pessoa já é de maior:
+		if (idade >= 18){
+			console.log('Maior de idade...');
+			//Estrutura aninhada:
+		}else if (idade <= 14) {
+			console.log('Adolescente');
+		}else{
+			console.log('Menor de idade...');
+		}
+
+		//Usando o && ambas as condições devem ser verdadeiras:
+		console.log(idade < 18 && idade == 14);
+
+		//Usando || apenas uma condição verdadeira é necessaria para retornar true:
+		console.log(idade < 18 || idade == 14);
+
+	</script>
+</body>
+</html>

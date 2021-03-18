@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Estrutura de Repetição</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Abra o console para ver os resultados</h1>
+	<script type="text/javascript">
+		//Estrutura for (para):
+		for (var i = 1; i <= 10; i++) {
+			console.log(i);
+		}
+
+		//Estrutura while (enquanto):
+		var contador = 1;
+		//Para evitar o que o loop se torne infinito, precisamos criar o contador e depois incrementa-lo dentro do loop:
+		while(contador <= 10){
+			console.log('Contador: ' + contador);
+			contador += 1;
+		}
+
+		//Estrutura do.while:
+		var c = 1;
+		//Mesmo a condição dentro do while já foi satisfeita, mas o do sempre vai rodar ao menos uma vez:
+		do{
+			console.log('Rodando o do...');
+			c += 1;
+		}while(c <= 1);
+	</script>
+</body>
+</html>

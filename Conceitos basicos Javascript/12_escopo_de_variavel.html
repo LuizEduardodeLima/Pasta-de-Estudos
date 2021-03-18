@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Escopo de Variável</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Abra o console para ver resultados</h1>
+
+	<script type="text/javascript">
+		//Escopo de variável Global e Local:
+		var cidade = 'Palmares';
+
+		function var_local(){
+			//A variável nome só pode ser usada dentro da função:
+			var nome = 'Eduardo';
+			//Já cidade que é uma global pode ser usada tanto dentro da função, quanto fora:
+			console.log(cidade);
+		}
+
+		var_local()
+
+		console.log(cidade);
+
+	</script>
+</body>
+</html>

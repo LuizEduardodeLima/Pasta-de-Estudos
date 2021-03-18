@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Operadores Aritméticos</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Abra o console para ver os resultados</h1>
+
+	<script type="text/javascript">
+		//Operações aritméticas:
+
+		/*
+		+ Adição
+		- subtração
+		* multiplicação
+		/ divisão
+
+		Abreviação dos operadores:
+
+		+= 
+		-= 
+		*=
+		/=
+
+		*/
+
+		var valor = 10;
+		console.log(valor + valor);
+		console.log(valor - valor);
+		console.log(valor * valor);
+		console.log(valor / valor);
+
+		//Note que o resultado será diferente, pois primeiro :
+		console.log('Abreviação');
+		console.log(valor += 10);
+		console.log(valor -= 10);
+		console.log(valor *= 10);
+		console.log(valor /= 10);
+
+		//Mudar tipo primitivo:
+		var n = 20;
+		console.log(n.toString());
+
+		//Formatando float:
+		var decimal = 15.125478;
+
+		//Mostra apenas duas casas decimais sem vírgula:
+		console.log(decimal.toFixed());
+
+		//Mostra duas casas decimais pos vírgula:
+		console.log(decimal.toFixed(2));
+
+		//Usando Math para pegar valor de PI:
+		console.log(Math.PI);
+
+		//Raiz quadrada:
+		console.log(3 ** 2);
+		//outra forma:
+		console.log(Math.pow(3, 2));
+		//Raiz tripla:
+		console.log(Math.pow(3, 3));
+
+		//Descobrir raiz quadrada de um valor ex: 9 * 9 = 81
+		console.log(Math.sqrt(81));
+
+		//Descobrindo tipo primitivo:
+		var inteiro = 10;
+		var flutuante = 10.5;
+		var apelido = 'dudu';
+
+		//Tanto valores inteiros quanto valores flutuantes serão retornados como number:
+		console.log(typeof(inteiro));
+		console.log(typeof(flutuante));
+		console.log(typeof(apelido));
+
+		//Descobrir se é inteiro:
+		console.log(Number.isInteger(inteiro));
+		console.log(Number.isInteger(flutuante));
+
+		//converter para binário:
+		var converter = 150;
+		console.log(converter.toString(2));
+	</script>
+</body>
+</html>
